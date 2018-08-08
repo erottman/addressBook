@@ -1,7 +1,12 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+const favicon = require('serve-favicon');
+const bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
+const methodOverride = require('method-override');
+const hbs = require('hbs');
+const hbsUtils = require('hbs-utils')(hbs);
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
